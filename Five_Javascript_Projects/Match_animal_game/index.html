@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory game</title>
+  </head>
+  <body id="b">
+    <h1>Memory Game</h1>
+    <p>No of attempt remaining: <span id="attempt"></span></p>
+    <div class="container" id="gameContainer">
+      <div class="box">
+        <div
+          id="one"
+          class="flip-container"
+          onclick="st(this,1); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backone" class="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div
+          id="two"
+          class="flip-container"
+          onclick="st(this,2); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backtwo" class="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div
+          id="three"
+          class="flip-container"
+          onclick="st(this,3); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backthree" class="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div
+          class="flip-container"
+          id="four"
+          onclick="st(this,4); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backfour" class="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div
+          class="flip-container"
+          id="five"
+          onclick="st(this,5); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backfive" class="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div
+          class="flip-container"
+          id="six"
+          onclick="st(this,6); this.onclick=null;"
+        >
+          <div class="flipper">
+            <div class="front"></div>
+            <div id="backsix" class="back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 id="display">Total Result Count</h2>
+    <h4 id="displaywon"></h4>
+    <h4 id="displayover"></h4>
+    <h4 id="displaytotal"></h4>
+    <button type="button" onclick="re()" id="resetBtn">Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>

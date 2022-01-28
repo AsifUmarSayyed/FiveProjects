@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  text-align: center;
+  background-color: beige;
+  margin: 20px 170px;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 20px;
+}
+.containerone {
+  text-align: center;
+
+  margin: 20px 170px;
+
+  padding: 20px;
+}
+input {
+  margin: 20px 10px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  color: #000;
+  background-color: rgb(188, 234, 255);
+  border: 2px solid rgb(5, 146, 211);
+}
+button {
+  margin: 20px 10px;
+  padding: 4px 10px;
+  border-radius: 3px;
+}

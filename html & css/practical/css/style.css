@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(218, 221, 221);
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: #d33d1f;
+}
+h2 {
+  font-size: 40px;
+  color: #d33d1f;
+}
+h3 {
+  font-size: 33px;
+}
+
+p {
+  font-size: 24px;
+}
+a {
+  font-size: 24px;
+  color: black;
+}
