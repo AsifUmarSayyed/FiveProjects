@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  background-color: #edf1f5;
+}
+
+/* header */
+
+.Seller-Details {
+  /*width: 100%;*/
+  height: 6rem;
+  padding-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Seller-Details .Logo_svgs {
+  height: 40px;
+  width: 40px;
+  padding-right: 2px;
+}
+
+.Seller-Name {
+  margin-top: 8px;
+  margin-bottom: -2rem;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: left;
+  color: #303a52;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+.Seller-Details .Address {
+  padding-left: 2.6rem;
+  color: #848482;
+  font-size: 13px;
+}
+
+.nav-fill .img_svgs,
+.Product-row .img_svgs {
+  height: 15px;
+  width: 15px;
+  margin-bottom: 3px;
+}
+
+.SubHead {
+  padding-top: 2rem;
+  font-size: 22px;
+  text-align: left;
+  color: #34282c;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+.nav-tabs .nav-item {
+  margin-top: 1rem;
+  font-size: 15px;
+  width: 20%;
+  color: #848482;
+}
+
+.nav-tabs a.active {
+  color: white;
+  background-color: #303a52;
+}
+
+.Call,
+.website {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+/* /.header */
+
+/* card */
+
+.tab-pane .Pro-card {
+  border-color: #b6b6b4;
+  width: 11rem;
+  height: 14rem;
+  margin: 10px;
+  align-items: center;
+  background-color: #f0f8ff;
+}
+
+.crd-slider {
+  //width: 260px;
+  background-color: #fff;
+  //border: 1px solid #b6b6b4;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f3f3f3;
+  border-radius: 0;
+}
+
+.crd-slider:hover {
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.details h5 {
+  color: #0000ff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.crd-slider .model {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  /*margin-left: 30px;
+    margin-right: 20px;*/
+  // height: 200px;
+  // width: 200px;
+}
+.desc {
+  font-size: 14px;
+  line-height: 16px;
+}
+.price {
+  color: red;
+  float: right;
+  font-weight: 600;
+}
+/* /.List Of Products */
+
+/* About Us */
+
+.tab-About p {
+  margin: 20px;
+}
+
+.basic {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 20px;
+}
+
+.tab-About th,
+.tab-About td {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.tab-About .basic table {
+  margin-left: 20px;
+}
+
+/*media*/
+
+@media (min-width: 360px) and (max-width: 520px) {
+  .Seller-Name {
+    font-size: 16px;
+    margin-top: -8px;
+    padding-left: 0px;
+  }
+  .Seller-Details .Logo_svgs {
+    margin-right: 0px;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+  }
+  .Seller-Details .Address {
+    font-size: 11px;
+    padding-left: 0px;
+    align-content: center;
+    padding-top: px;
+  }
+  .nav-tabs .nav-item a {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -6px;
+  }
+
+  .Call,
+  .website {
+    font-size: 10px;
+  }
+
+  .SubHead {
+    font-size: 16px;
+    margin-top: -16px;
+  }
+  .tab-About p {
+    font-size: 14px;
+    margin-bottom: -2px;
+  }
+  .basic {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    align-content: center;
+  }
+
+  .tab-About th {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .tab-About td {
+    padding: 6px;
+    font-size: 11px;
+  }
+}

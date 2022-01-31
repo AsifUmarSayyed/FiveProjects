@@ -1,0 +1,17 @@
+:host::ng-deep .gpay-button.white.pay.en{
+    width: 10px;
+    background-image : url("/assets/CheckOutGoogle.png")
+    
+}
+
+:host::ng-deep .gpay-button.white.pay.en ::after{
+    content:'goodbye'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  top: 2px;
+}
+
+ 

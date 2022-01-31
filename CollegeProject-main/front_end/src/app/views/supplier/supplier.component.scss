@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+.mainFrame{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.nav-tabs{
+    background-color: #ffffff;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: white;
+    background-color: #303A52;
+}
+
+#home, #profile{
+    padding: 20px 10px;
+    background-color: #EDF1F5;
+}
+
+.comapnyCard{
+    background-color: #ffffff;
+}
+
+.comapnyCardParent{
+    padding: 10px;
+    background-color: #303A52;
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+.companyLogo{
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.companyLogo img{
+    height: 9vh;
+}
+
+.comapnyDescription{
+    padding: 12px 20px;
+}
+
+.personalInfo, .organizationInfo, .IdentificationInfo {
+    color: #646568;
+    background-color: white;
+    padding: 10px;
+}
+
+.infomationTitle{
+    font-size: 1.5rem;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px 2.5vw;
+}
+
+
+/* Dashboard CSS */
+.card{
+    //width: 16vw;
+    color: white;
+    text-align: end;
+}
+
+.productgridtable {
+    width: auto;
+    color: black;
+    text-align: start;
+}
+
+.imgCard{
+    padding: 5px;
+    height: 3.8vw;
+    float: left;
+    opacity: 0.7;
+}
+
+.dashboardMainFrame{
+    padding: 12px;
+}
+
+.clickChart {
+    background-color: #ffffff;
+    margin-right: 5px;
+}
+
+.quotesChart {
+    background-color: #ffffff;
+}
+
+.quotesTable {
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+
+/* Product Management CSS */
+
+.productManagement{
+    padding: 12px;
+    background-color: #EDF1F5;
+}
+
+.productTable{
+    background-color: #ffffff;
+    padding: 12px;
+    padding-bottom: 0px !important;
+}
+
+.search-input{
+    border: none;
+    border-bottom: 1px solid #a39f9f;
+}
+
+#productTable_filter > label > input[type=search]{
+    border: none;
+    border-bottom: 1px solid #a39f9f;
+}
+
+.updateStatus{
+    margin-left: 3rem;
+    color: green;
+    font-size: 1rem;
+}
+
+/* .form-group{
+    padding: 0.8vh 0px;
+} */
+
+.btn-primary{
+    background: transparent;
+    color: #0062cc;
+    border: none;
+    border-bottom: 1px solid #0062cc;
+    // margin: 10px 0px;
+    padding: 9px 21px 2px;
+}
+
+#upload, #upload-label{
+    display: none;
+}
+
+.addProduct{
+	padding: 10px;
+	font-size: 14px;
+}
+
+.uploadbox{
+	background-color: #cccccc;
+	height: 180px;
+	text-align: center;
+	margin-left: 0px;
+}
+
+#productTable_info{
+    display: none;
+}
+
+#productTable_paginate{
+    display: none;
+}
+
+.modal-md {
+  max-width: 600px;
+}
+
+.modal-sm {
+  max-width: 500px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #6c757d;
+  border: none;
+  border-bottom: 1px solid #6c757d;
+  margin: 10px 0px;
+  padding: 9px 21px 2px;
+}
+
+.btn-success {
+  background: transparent;
+  color: #28a745;
+  border: none;
+  border-bottom: 1px solid #28a745;
+  margin: 10px 0px;
+  padding: 9px 21px 2px;
+}
+
+:host ::ng-deep .tabview-custom {
+    i, span {
+        vertical-align: middle;
+    }
+
+    span {
+        margin: 0 .5rem;
+    }
+}
+
+:host ::ng-deep .p-button {
+    margin-right: .25rem;
+}
+
+:host ::ng-deep .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  padding: 0.7rem;
+}
+
+/* :host ::ng-deep .tabview-custom {
+  p {
+    margin-left: 41rem;
+  }
+}
+ */
+
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    padding: 0.5re 0.5rem;
+    // border: 1px solid #fdfdfd;
+    border-width: 0 0 1px 0;
+    border: 1px solid black;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td:first-child{
+    border-left: 0px !important;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td:last-child{
+    border-right: 0px !important;
+}
+
+
+.b{
+    overflow: hidden;
+    height: 523px;
+}
+/* 
+::ng-deep .p-tabview .p-tabview-nav li {
+	margin-left: auto;
+} */

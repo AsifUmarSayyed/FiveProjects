@@ -1,0 +1,142 @@
+<div class="container-fluid parent-container">
+
+    <div class="card">
+        <p-tabView styleClass="tabview-custom">
+            <p-tabPanel header="Header V">
+                <ng-template pTemplate="header">
+                    <span style="flex: auto;">Cart</span>
+                </ng-template>
+
+
+                <div style="height: 90vh;">
+                    <div class="cart-exist" *ngIf="(cartList.length > 0); else cartNotFound">
+
+                        <p class="title">Your Bag</p>
+                
+                        <div class="row parent-row">
+                            <div class="col-8 cart-items">
+                                <table class="table">
+                                    <tr class="table-row">
+                                        <th scope="row">Name</th>
+                                        <th scope="row">Price per peice</th>
+                                        <th scope="row">Quantity</th>
+                                        <th scope="row">Total</th>
+                                    </tr>
+                
+                                    <tr *ngFor="let c of cartList; index as i">
+                                        <th scope="row">
+                                            <a (click)="navigateToProduct(c.productId)">{{c.name}}</a>
+                                        </th>
+                                        <td>{{c.perPeice}}</td>
+                                        <td><input type="number" (focusout)="focusOutFunction(i, c.quantity)" class="product-input"
+                                                name="quantity" id="quantity" [(ngModel)]="c.quantity"></td>
+                                        <!-- <td>{{c.qty}}</td> -->
+                                        <td>{{c.totalPrice}}</td>
+                                        <td (click)="removeCartItem(i)">Remove</td>
+                                    </tr>
+                                </table>
+                            </div>
+                
+                            <div class="col-4">
+                                <div class="card order-summary" style="width: 25rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Order Summary</h5>
+                
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex">
+                                                <div>
+                                                    Total Products
+                                                </div>
+                                                <div>
+                                                    {{totalProduct}}
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item d-flex">
+                                                <div>
+                                                    Grand Total
+                                                </div>
+                                                <div>
+                                                    {{grandTotal}}
+                                                </div>
+                                            </li>
+                                        </ul>
+                
+                                        <div class="d-flex check-out">
+                                            <!-- <a href="#" class="card-link">Check Out</a>
+                                        <a href="#" class="card-link">Shop More</a> -->
+                
+                                            <span class="spanBtnShopMore">
+                                                <button id="btnShopMore"></button>
+                                            </span>
+                                            <a class="card-link">
+                                                <app-payments-demo (paymentStatus)="paymentStatus($event)"></app-payments-demo>
+                                            </a>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                
+                    <ng-template #cartNotFound>
+                        <div class="not-found-container d-flex">
+                            <h3>
+                
+                                <a href="">Shop and Add Some Products to Cart.</a>
+                
+                            </h3>
+                        </div>
+                    </ng-template>
+                </div>
+
+
+
+            </p-tabPanel>
+
+
+            <p-tabPanel header="Header Orders">
+                <ng-template pTemplate="header">
+                    <span style="flex: auto;">Orders</span>
+                </ng-template>
+
+                <div style="height: 90vh;">
+                   <h3>Orders</h3>
+
+                <p-table [value]="orderList" [scrollable]="true" scrollHeight="flex">
+                  <ng-template pTemplate="header">
+                    <tr>
+                      <th>Product Name</th>
+                      <th>Price Per Item</th>
+                      <th>Quantity</th>
+                      <th>Total Price</th>
+                      <th>Delivery Status</th>
+                    </tr>
+                  </ng-template>
+                  <ng-template pTemplate="body" let-orderListObj>
+                    <tr>
+                      <td>{{orderListObj.prodcutName}}</td>
+                      <td>{{orderListObj.pricePerItem}}</td>
+                      <td>{{orderListObj.quantity}}</td>
+                      <td>{{orderListObj.pricePerItem}}</td>
+                      <td>{{orderListObj.price}}</td>
+                      <td>{{orderListObj.deliveryStatus}}</td>
+                    </tr>
+                  </ng-template>
+                </p-table>
+
+
+                </div>
+
+
+
+            </p-tabPanel>
+
+        </p-tabView>
+    </div>
+
+
+
+</div>

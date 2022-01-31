@@ -1,0 +1,80 @@
+.parent-container{
+    background-color: #fff;
+}
+
+.title{
+    text-align: center;
+    font-size: 26px;
+    padding: 40px;
+}
+
+.parent-row{
+    padding: 0px 0px 50px;
+}
+
+.cart-items{
+    padding: 40px;
+    text-align: -webkit-center;
+}
+
+.product-input{
+    width: 5rem;
+    border: none;
+}
+
+.order-summary{
+    margin: auto;
+}
+
+.list-group-item{
+    justify-content: space-evenly;
+}
+
+.check-out{
+    justify-content: space-around;
+    padding-top: 12px;
+}
+
+.not-found-container{
+    height: 100vh;
+    
+}
+
+.not-found-container h3{
+    margin: auto;
+}
+
+.spanBtnShopMore{
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 1px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    padding: 5px 19px 0px;
+    border-radius: 4px;
+}
+
+#btnShopMore{
+    background-image: url("/assets/ShopMore.png");
+    width: 108px;
+    height: 28px;
+    padding: 12px;
+    border: none;
+    background-repeat: no-repeat;
+    
+}
+
+
+:host::ng-deep .gpay-button.white.pay.en{
+    width: 10px;
+    background-image : url("/assets/CheckOutGoogle.png")
+    
+}
+
+:host::ng-deep .gpay-button.white.pay.en ::after{
+    content:'goodbye'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  top: 2px;
+}
+
+ 

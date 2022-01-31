@@ -1,0 +1,57 @@
+<!-- <div class="side-nav">
+  <div id="btn1" class="btn1">
+    <button class="btn side-nav-btn Tender" id="SoilCare">Soil Care <img src = "assets/Sidebar.png"></button>
+  </div>
+  <div id="btn3" class="btn3">
+    <button class="btn side-nav-btn GovtQuickLinks" id="GovtQuickLinks">Govt Quick Links <img src = "assets/GovtQuickLinks.png"></button>
+  </div>
+  <div id="btn4" class="btn4">
+    <button class="btn side-nav-btn Weather" id="Weather">Weather <img src = "assets/Weather.svg"></button>
+  </div>  
+</div> -->
+
+<div class="container-fluid CategoryHead">
+  <div class="heading justify-content-center input-group mt-1">
+    <h2>Farming Tools, Equipment & Machines</h2>
+  </div>
+
+  <section class="SubCategory-cards">
+      <div class="container">
+        <div class="row">
+          <div *ngFor = "let subCategory of subMainCategory; let i = index" class="col-md-3 subCategory" id = "" >
+            <div class="card" (click)="showModalCategory(i)">
+            <div class="card-body text-center">
+              <div class="card-title">
+                <h3 class="heading" data-id = "">{{subCategory.name}}</h3>
+                <img src=""/>
+                <h6><!-- {{sub.image}} --></h6>
+              </div>
+            </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+
+<div class="modal fade" bsModal #categoryModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="dialog-static-name">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Static modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="categoryModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul id = "categoryid">
+          <li *ngFor = "let cat of category">
+            {{cat.name}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
